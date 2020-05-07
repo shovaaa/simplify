@@ -1,7 +1,10 @@
-body{
-    margin: 50px 80px 0px; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: white;    
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{   
+    font-family: Georgia, 'Times New Roman', Times, serif;   
 }
 
 button{
@@ -14,13 +17,14 @@ button{
 }
 
 .head{
+    
    background-color: whitesmoke;
    border: 1px solid black; 
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: baseline;
-   padding: 10px;
+   
 }
 
 .head img{
@@ -104,7 +108,7 @@ button{
 
 .display-grid{
     display: grid;
-    grid-template-columns: 0.5fr 0.1fr;
+    grid-template-columns: 0.7fr 0.3fr;
     
 }
 
@@ -123,13 +127,11 @@ button{
     border-right: 2px solid black; 
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 4px;
-    
-    
+    gap: 4px;   
 }
 
 .client-1{
-    width: 380px;
+    width: 410px;
     height: auto;
     margin: 10px 10px 10px 0px;
     border: 1px solid black;
@@ -137,21 +139,21 @@ button{
 }
 
 .client-2{
-    width: 380px;
+    width: 410px;
     height: auto;
     margin: 10px 20px 10px 0px;
     border: 1px solid black;
     
 }
 .client-3{
-    width: 380px;
+    width: 410px;
     height: auto;
     margin: 0 10px 0px 0px;
     border: 1px solid black;
     
 }
 .client-4{
-    width: 380px;
+    width: 410px;
     height: auto;
     margin: 0px 20px 0px 0px;
     border: 1px solid black;
@@ -245,10 +247,13 @@ button{
 }
 
 .footer{
+    display: flex;
+    flex-direction: column;
     margin: 40px 10px 0px;
     background-color:whitesmoke;
     padding: 20px 10px 0px 10px;
     font-size: 13px;
+    align-items: center;
 }
 .footer-flex{
     display: flex;
@@ -267,18 +272,17 @@ button{
 }
 
 .copyright{
-    width: 1082px;
+    width: 100%;
+    height: auto;
     margin: 0px 3%;
     align-items: center;
     text-align: center;
     font-size: 12px;
-    color: rgb(99, 98, 98);   
+    color: rgb(99, 98, 98);
+    border-top: 1px solid wheat;   
 }
 
 @media screen and (max-width: 1000px) {
-    body{
-        margin: 0px 0px;
-    }
     .head{
         flex-direction: column;
         align-items: center;
@@ -296,9 +300,7 @@ button{
     }
 
     .display-grid{
-        display: block;
-        width: 100%;
-        height: auto;
+        grid-template-columns: repeat(1, auto);
     }
 
     .ad-img{
@@ -309,28 +311,35 @@ button{
     .client-grid{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
         justify-content: center;
         margin: 0px 0px;
         border-top: 2px solid black;
     }
     .client-1{
+        width: 100%;
+        height: auto;
         margin: 10px 0px 0px;
     }
     .client-2{
+        width: 100%;
+        height: auto;
         margin: 0px;
     } 
     .client-3{
+        width: 100%;
+        height: auto;
         margin: 0px;
     } 
     .client-4{
+        width: 100%;
+        height: auto;
         margin: 0px;
     }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
+    .profile-img{
+        width: 90px;
+        height: 90px;
     }
     
 }
