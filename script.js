@@ -3,49 +3,22 @@ const rightArrow = document.getElementById("demo-right");
 const demoBg = document.getElementById("product-demo");
 const dotslide = document.getElementsByClassName("round");
 let count = 0;
-const screen = window.matchMedia("(max-width: 993px)");
+const screen = window.matchMedia("(max-width: 1000px)");
 const nav = document.getElementById("nav-bar");
 const menuIcon = document.getElementById("hamburger-icon");
 const login = document.getElementById("menu-btn");
 const displayMenu = document.getElementById("mainMenu");
 const menuLogo = document.getElementById("menu-logo");
 
-function screenListener(screen){
-   if(screen.matches){
-      menuIcon.style.display = "inline-block";
-      displayMenu.style.display = "none";
-      login.style.display = "none";
-      nav.style.flexDirection = "column";
-      nav.style.alignItems = "center";
-   } else{
-      menuIcon.style.display = "none"
-      displayMenu.style.display = "flex";
-      login.style.display = "inline-block";
-      nav.style.flexDirection = "row";
-      nav.style.alignItems = "baseline";
-   }
-}
-
-screen.addListener(screenListener);
-
 menuIcon.addEventListener("click", function(){
-   
    if (displayMenu.style.display === "none" && login.style.display === "none") {
-      displayMenu.style.display = "block";
+      displayMenu.style.display = "flex";
+      displayMenu.style.flexDirection = "column"
       login.style.display = "block"; 
-      
    } else {
       displayMenu.style.display = "none";
-      login.style.display = "none"; 
-      
-   }
-
-   
-      
-  
-   
-   
-
+      login.style.display = "none";  
+   }  
 });
 
 leftArrow.addEventListener("mouseover", slidearrow);
