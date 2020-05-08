@@ -76,64 +76,50 @@ button:hover{
 .demo{
     border: 1px solid black;
     padding: 80px 0px;
+    text-align: center;
+    color: white;  
     background-image: url("images/demo-1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
-    color: white;
-    animation: slide 15s infinite;
+    background-size: 100% 100%;  
 }
 
-@keyframes slide{
-    25%{
-        background-image: url("images/demo-2.jpg");
-    }
-    50%{
-        background-image: url("images/demo-3.jpg");
-    }
-    75%{
-        background-image: url("images/demo-4.jpg");
-    }
-    100%{
-        background-image: url("images/demo-1.jpg");
-    }
+.slide-2{
+    display: none;
 }
 
-.demo p{
+.slide-3{
+    display: none;
+}
+
+.slide-4{
+    display: none;
+}
+
+.grid-column{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    align-items: center;
+}
+
+.grid-column i{
+    font-size: xx-large;
+    color: white;  
+}
+
+.slider p{
     font-family: 'Merriweather', serif;
     margin: 70px 10px 20px;
     color: white;
     font-weight: 500;
 }
 
-.demo button{
+.slider button{
     margin: 30px 10px;
 }
 
-#demo-left{
-    float: left;
-    width: 30px;
-    height: 50px;
-    margin: 0px 0px 0px 20px;   
-}
-
-#demo-right{
-    float: right;
-    width: 30px;
-    height: 50px;
-    margin: 0px 20px 0px 0px;
-}
-
-.img-dotmove{
-    display: flex;
-    flex-direction: row;   
-    justify-content: center ;
-}
-
-.round{
-    margin: 40px 10px 10px ;
-    width: 10px;
-    height: 10px;
+.round i{
+    margin: 40px 20px 10px 0px;
+    font-size: 8px;
 }
 
 .display-grid{
@@ -314,6 +300,11 @@ button:hover{
     justify-content: center;
     margin: 0px 40px 0px 40px;  
 }
+
+.footer-flex div i {
+    font-size: 20px;
+}
+
 .footer-flex ul li{
     display: block;
     font-size: 11px;
@@ -456,7 +447,8 @@ button:hover{
     }
     
     .demo p{
-        color: white;
+        color:black;
+        font-weight: 700;
     }
     
     .client-grid{
