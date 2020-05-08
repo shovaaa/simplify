@@ -114,7 +114,7 @@ button:hover{
 }
 
 .slider button{
-    margin: 30px 10px;
+    margin: 30px 10px 10px 0px;
 }
 
 .round i{
@@ -144,6 +144,7 @@ button:hover{
 .about p{
     margin: 10px 20px 10px 0px;
 }
+
 .client-grid{
     margin: 0px 20px 5px 50px;
     border-right: 2px solid black; 
@@ -156,24 +157,23 @@ button:hover{
     width: 410px;
     height: auto;
     margin: 25px 10px 10px 0px;
-    border: 1px solid black;
-    
+    border: 1px solid black;   
 }
 
 .client-2{
     width: 410px;
     height: auto;
     margin: 25px 20px 10px 0px;
-    border: 1px solid black;
-    
+    border: 1px solid black;  
 }
+
 .client-3{
     width: 410px;
     height: auto;
     margin: 0 10px 0px 0px;
-    border: 1px solid black;
-    
+    border: 1px solid black;   
 }
+
 .client-4{
     width: 410px;
     height: auto;
@@ -191,6 +191,7 @@ button:hover{
     height: 70px;
     border-radius: 100%;
 }
+
 .flexcontainer{
     display: flex;
     flex-direction: row;
@@ -211,6 +212,7 @@ button:hover{
 .flexcontainer button:hover{
     border: 2px solid purple;
 }
+
 .flexcontainer p{
     width: 200px;
     margin: 5px 10px 0px 20px ;
@@ -235,6 +237,7 @@ button:hover{
     font-size: 20px;
     font-weight: bold;
 }
+
 .search input{
     margin: 10px 1%;
     width: 190px;
@@ -287,6 +290,7 @@ button:hover{
     font-size: 13px;
     align-items: center;
 }
+
 .footer-flex{
     display: flex;
     flex-direction: row;
